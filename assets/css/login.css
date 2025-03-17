@@ -1,0 +1,136 @@
+:root{
+    --primary-color: #222F66;
+    --secondary-color: #DEAA4E;
+    --font-family: Poppins;
+    --font-size: 15px;
+    --font-weight: 450;
+}
+
+body {
+   background-image: url(/assets/images/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.account-pages {
+    display: flex;
+    align-items: center;
+    min-height: 110vh;
+    justify-content: center;
+}
+
+
+.card {
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px var(--primary-color);
+}
+
+.card-body {
+    padding: 2rem;
+    /* padding-top: 2.4rem; */
+    padding-bottom: 2.4rem;
+}
+
+.text-center img {
+    width: 70%;
+    height: auto;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea, var(--primary-color));
+    border: none;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+}
+
+.form-label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.form-control {
+    border-radius: 20px;
+    padding-left: 40px;
+    /* space for icon */
+}
+
+.input-icon {
+    position: relative;
+    color: black;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.text-muted,
+.text-dark {
+    font-size: 0.9rem;
+}
+
+.text-uppercase {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.card {
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.card-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-body h4 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-footer button {
+    width: 100px;
+}
+
+.text-success {
+    width: 75%;
+    text-align: end;
+    font-weight: bold;
+    color: var(--secondary-color)!important;
+}
+
+@media (max-width: 768px) {
+    .card-body .row {
+        flex-direction: column;
+    }
+
+    .card-footer button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
