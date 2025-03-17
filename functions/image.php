@@ -19,7 +19,7 @@ function image($image , $target_dir){
          $uploadOk = 0;
      }
   
-    // Check if $uploadOk is set to 0 by an error
+    // Check if $uploadOk
      if ($uploadOk != 0) {
          if (move_uploaded_file($image["tmp_name"], $target_file)) {
               return $image["name"];

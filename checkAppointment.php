@@ -293,67 +293,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </button>
                 </form>
             </div>
-
-            <!-- <div class="appointment hidden">
-                <div class="details-header">
-                    <h3>Appointment Details</h3>
-                    <span id="statusBadge"></span>
-                </div>
-
-                <div class="details-content">
-                    <dl>
-                        <div class="detail-row">
-                            <dt>Patient Name</dt>
-                            <dd id="detailName"></dd>
-                        </div>
-                        <div class="detail-row">
-                            <dt>NIC</dt>
-                            <dd id="detailNic"></dd>
-                        </div>
-                        <div class="detail-row">
-                            <dt>Phone</dt>
-                            <dd id="detailPhone"></dd>
-                        </div>
-                        <div class="detail-row">
-                            <dt>Doctor</dt>
-                            <dd id="detailDoctor"></dd>
-                        </div>
-                        <div class="detail-row">
-                            <dt>Appointment</dt>
-                            <dd id="detailDate"></dd>
-                        </div>
-                    </dl>
-                </div>
-
-
-                <button class="back-button" id="backButton">Check Another Appointment</button>
-            </div> -->
         </div>
     </div>
-
-    <!-- <div id="toast" class="toast"></div>
-    <script>
-        function displayAppointmentDetails(appointmentData) {
-            // Populate appointment details
-            document.getElementById('appointmentDetails').innerHTML = `
-                <p>Name: ${appointmentData.name}</p>
-                <p>NIC: ${appointmentData.nic}</p>
-                <p>Phone: ${appointmentData.phoneNumber}</p>
-                <p>Doctor: ${appointmentData.doctor_name}</p>
-                <p>Date: ${appointmentData.date} ${appointmentData.time}</p>
-            `;
-
-            // Show appointment details and hide the form
-            document.querySelector('.appointmentForm').classList.add('hidden');
-            document.querySelector('.appointment').classList.remove('hidden');
-        }
-
-        document.getElementById('backButton').addEventListener('click', () => {
-            // Show the form and hide appointment details
-            document.querySelector('.appointmentForm').classList.remove('hidden');
-            document.querySelector('.appointment').classList.add('hidden');
-        });
-    </script> -->
 </body>
 
 </html>

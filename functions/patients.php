@@ -77,6 +77,7 @@ function getInquiriesCount($conn){
     return $count[0];
     mysqli_close($conn);
 }
+
 function getAllFeedbacks($conn, $start, $limit){
     $sql = "SELECT * FROM feedbacks ORDER BY id DESC LIMIT $start, $limit ";
     $result = mysqli_query($conn, $sql);
@@ -85,6 +86,7 @@ function getAllFeedbacks($conn, $start, $limit){
     mysqli_close($conn);
     return $feedbacks;
 }
+
 function getAllApprovedFeedbacks($conn, $start, $limit){
     $sql = "SELECT * FROM feedbacks WHERE status='Approved' ORDER BY id DESC LIMIT $start, $limit ";
     $result = mysqli_query($conn, $sql);
@@ -101,6 +103,7 @@ function getFeedbacksCount($conn){
     return $count[0];
     mysqli_close($conn);
 }
+
 function updateFeedbackStatus($conn, $id, $status){
     $sql = "UPDATE feedbacks SET status='$status' WHERE id='$id'";
     $result = mysqli_query($conn, $sql);
@@ -112,6 +115,7 @@ function updateFeedbackStatus($conn, $id, $status){
     }
     mysqli_close($conn);
 }
+
 function updateInquiryStatus($conn, $id, $status){
     $sql = "UPDATE inquiries SET status='$status' WHERE id='$id'";
     // var_dump($sql);

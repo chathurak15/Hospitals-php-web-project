@@ -95,24 +95,24 @@ window.addEventListener('resize', () => {
     }
 });
 
-// Example notification system
-const notificationBtn = document.querySelector('.notification-btn');
-notificationBtn.addEventListener('click', () => {
-    alert('Notifications feature coming soon!');
-});
+// // Example notification system
+// const notificationBtn = document.querySelector('.notification-btn');
+// notificationBtn.addEventListener('click', () => {
+//     alert('Notifications feature coming soon!');
+// });
 
-// Example search functionality
-const searchInput = document.querySelector('.search-box input');
-searchInput.addEventListener('input', (e) => {
-    console.log('Searching for:', e.target.value);
-    // Implement search functionality here
-});
+// // Example search functionality
+// const searchInput = document.querySelector('.search-box input');
+// searchInput.addEventListener('input', (e) => {
+//     console.log('Searching for:', e.target.value);
+//     // Implement search functionality here
+// });
 
-// Example add patient functionality
-const addPatientBtn = document.querySelector('.add-patient-btn');
-if (addPatientBtn) {
-    addPatientBtn.addEventListener('click', () => {
-        alert('Add patient feature coming soon!');
-    });
-}
+// // Example add patient functionality
+// const addPatientBtn = document.querySelector('.add-patient-btn');
+// if (addPatientBtn) {
+//     addPatientBtn.addEventListener('click', () => {
+//         alert('Add patient feature coming soon!');
+//     });
+// }
 
